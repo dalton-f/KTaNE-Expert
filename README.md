@@ -23,10 +23,12 @@ A text-based bomb defusal tool to act inplace of an expert for the game Keep Tal
 
 A simple text-based program that can solve almost every vanilla and needy module in the game Keep Talking and Nobody Explodes. 
 
-This tool is capable of:
+This tool is able to:
 
-* Solving almost every vanilla module
-* Dealing with needy modules
+- Provides solutions for most vanilla modules found in KTaNE.
+- Can handle various module types, including Wires, The Button, Memory, Who's On First, Password and Complicated Wires.
+- Offers step-by-step instructions and solutions for successful module defusal.
+- Capable of handling needy modules like the Knob module.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
