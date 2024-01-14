@@ -240,9 +240,6 @@ def Memory():
 
     stage1Pos, stage1Value = None, None
     stage2Pos, stage2Value = None, None
-    stage3Pos, stage3Value = None, None
-    stage4Pos, stage4Value = None, None
-
     # STAGE ONE
     if displayedNumber in [1, 2]:
         stage1Pos = 2
@@ -275,19 +272,15 @@ def Memory():
     # STAGE THREE
     displayedNumber = int(input("What number is being displayed?\n"))
     if displayedNumber == 1:
-        stage3Pos = get_button_position(stage2Value)
         stage3Value = stage2Value
         press_button(stage2Value)
     elif displayedNumber == 2:
-        stage3Pos = get_button_position(stage1Value)
         stage3Value = stage1Value
         press_button(stage1Value)
     elif displayedNumber == 3:
         stage3Value = get_position_value(3)
-        stage3Pos = 3
         print("Press the button in the third position")
     elif displayedNumber == 4:
-        stage3Pos = get_button_position(4)
         stage3Value = 4
         print("Press the button labeled 4")
 
@@ -295,15 +288,12 @@ def Memory():
     displayedNumber = int(input("What number is being displayed?\n"))
     if displayedNumber == 1:
         stage4Value = get_position_value(stage1Pos)
-        stage4Pos = stage1Pos
         print(f"Press the button in position {stage1Pos}")
     elif displayedNumber == 2:
         stage4Value = get_position_value(1)
-        stage4Pos = 1
         print("Press the button in the first position")
     elif displayedNumber in [3, 4]:
         stage4Value = get_position_value(stage2Pos)
-        stage4Pos = stage2Pos
         print(f"Press the button in position {stage2Pos}")
 
     # STAGE FIVE
